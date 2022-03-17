@@ -1,0 +1,43 @@
+.testimonials {
+    padding: 3em 2em;
+    text-align: center;
+
+    &__title {
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $clr__neutral--blue-gry;
+    }
+
+    &__container {
+        width: 100%;
+        text-align: center;
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+
+        & p {
+            margin-block: 2em;
+            color: $clr__primary--blue-dark;
+        }
+
+        & h4 {
+            margin-bottom: .6em;
+            color: $clr__neutral--blue-des-dark;
+        }
+
+        & h5 {
+            color: $clr__neutral--blue-gry;
+            font-size: .7rem;
+        }
+
+        & img {
+            margin-top: 4em;
+            border-radius: 50%;
+            width: 80px;
+        }
+    }
+}

@@ -1,0 +1,138 @@
+@include media-md {
+    .menu-toggle {
+        display: none;
+        position: absolute;
+    }
+
+    .header {
+        background: url('../images/desktop/image-header.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+
+        &__logo {
+            margin: 1em;
+        }
+
+        .nav {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            position: static;
+            background-color: transparent;
+            transform: translate(0, 0);
+            clip-path: none;
+            margin: 0;
+            padding: 0;
+
+            &__items {
+                display: flex;
+                margin-left: auto;
+
+                &--item {
+                    margin-left: 2em;
+                }
+
+                &--link {
+                    color: $clr__neutral--white;
+                }
+            }
+
+            
+        }
+
+        .contact-link {
+            color: $clr__neutral--blue-des-dark;
+            background-color: $clr__neutral--white;
+            transition: background .5s ease;
+
+            &:hover {
+                background-color: rgba(255, 255, 255, 0.4);
+                color: $clr__neutral--white;
+            }
+        }
+    }
+
+    .services {
+
+        &__img--upper,
+        &__img--lower {
+            height: auto;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .left {
+            grid-area: 1;
+        }
+
+        &__textarea {
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 7em;
+        }
+
+        &__third--item {
+            
+
+            & h3 {
+                margin-top: 12em;
+                margin-bottom: 1em;
+            }
+
+            & p {
+                width: 60%;
+                margin: auto;
+            }
+        }
+
+        .one {
+            background: url('../images/desktop/image-graphic-design.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .two {
+            background: url('../images/desktop/image-photography.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+    }
+
+    .testimonials {
+        padding: 5em;
+
+        &__container {
+            width: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-around;
+        }
+
+        &__card {
+            width: 25%;
+        }
+    }
+
+    .project__previews {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer {
+
+        &__nav {
+            width: 30%;
+            margin-inline: auto;
+        }
+
+        &__social-links {
+            margin-top: 3em;
+            width: 15%;
+        }
+    }
+}

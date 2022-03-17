@@ -1,0 +1,117 @@
+.header {
+    position: relative;
+    min-height: 100vh;
+    background: url('../images/mobile/image-header.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+
+    &__logo {
+        width: 100px;
+    }
+
+    &__container {
+        width: 90%;
+        padding-block: 2em;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .nav {
+        padding: 4em 1em 1em;
+        position: fixed;
+        text-align: center;
+        width: 320px;
+        left: 50%;
+        top: -1000px;
+        z-index: 5;
+        transform: translate(-50%, -50%);
+        background-color: $clr__neutral--white;
+        clip-path: polygon(0 17%, 86% 17%, 100% 0, 100% 16%, 100% 100%, 0 100%);
+        transition: all 1s ease;
+
+        &.nav-open {
+                left: 50%;
+                top: 220px;
+                transform: translate(-50%, -50%);
+
+        }
+
+        &__items {
+            list-style: none;
+
+            &--item {
+                padding: 1em;
+            }
+
+            &--link {
+                text-decoration: none;
+                color: $clr__neutral--blue-gry-dark-800;
+
+                &:hover {
+                    color: $clr__primary--yellow;
+                }
+            }
+
+
+        }
+
+
+    }
+
+    .contact-link {
+        background-color: $clr__primary--yellow;
+        color: $clr__neutral--blue-des-dark;
+        text-transform: uppercase;
+        padding: 1em 1.5em;
+        font-size: .9rem;
+        font-family: $ff__fraunces;
+        font-weight: 400;
+        border-radius: 100px;
+
+        &:hover {
+            color: $clr__neutral--white;
+        }
+    }
+
+    &__title {
+        text-align: center;
+        width: 95%;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: $clr__neutral--white;
+        letter-spacing: 2px;
+        margin-top: 5rem;
+    }
+
+    &__arrow {
+        opacity: 1;
+        margin-top: 7em;
+        transition: opacity .5s ease;
+        animation: scroll 2s linear infinite;
+
+        &.arrow-disappear {
+            opacity: 0;
+        }
+    }
+
+    @keyframes scroll {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(90px);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+    }
+}

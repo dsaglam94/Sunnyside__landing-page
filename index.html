@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- author -->
+  <meta name="Coded by" content="Dogan Saglam - (imDawn)" />
+  <meta name="GitHub:creator" content="https://github.com/dsaglam94" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- CSS stylesheet link -->
+  <link rel="stylesheet" href="./src/css/main.css">
+  <!-- Fontawesome Link -->
+  <script src="https://kit.fontawesome.com/be05affc2e.js" crossorigin="anonymous"></script>
+  <title>Frontend Mentor | Sunnyside agency landing page</title>
+</head>
+<body>
+
+    <header id="header" class="header">
+      <div class="header__container">
+        <div class="header__logo">
+          <img src="./src/images/logo.svg" alt="brand logo">
+        </div>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <nav class="nav">
+          <ul class="nav__items">
+            <li class="nav__items--item">
+              <a class="nav__items--link" href="#header">About</a>
+            </li>
+            <li class="nav__items--item">
+              <a class="nav__items--link" href="#services">Services</a>
+            </li>
+            <li class="nav__items--item">
+              <a class="nav__items--link" href="#projects">Projects</a>
+            </li>
+            <li class="nav__items--item">
+              <a class="nav__items--link contact-link" href="#footer">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="header__title">We are creatives</h1>
+      <img class="header__arrow" src="./src/images/icon-arrow-down.svg" alt="arrow-down icon">
+    </header>
+
+  <main class="main">
+
+    <section id="services" class="services">
+      <div class="services__first row">
+        <div class="services__img--upper">
+          <!-- <img src="./images/mobile/image-transform.jpg" alt="photo of an egg"> -->
+        </div>
+        <div class="services__textarea left">
+          <h2>Transform your brand</h2>
+          <p>
+            We are a full-service creative agency specializing in helping brands grow fast.
+            Engage your clients through compelling visuals that do most of the marketing for you.
+          </p>
+          <a class="services__link--yellow" href="#">Learn more</a>
+        </div>
+      </div>
+
+      <div class="services__second row">
+        <div class="services__img--lower">
+          <!-- <img src="./images/mobile/image-stand-out.jpg" alt=""> -->
+        </div>
+        <div class="services__textarea">
+          <h2>Stand out to the right audience</h2>
+          <p>
+            Using a collaborative formula of designers, researchers, photographers, videographers, and copywriters, we’ll build and extend your brand in digital places.
+          </p>
+          <a class="services__link--red " href="#">Learn more</a>
+        </div>
+        
+      </div>
+
+      <div class="services__third row">
+        <div class="services__third--item one">
+          <h3>Graphic design</h3>
+          <p>Great design makes you memorable. We deliver artwork that underscores your brand message and captures potential clients’ attention.</p>
+        </div>
+        <div class="services__third--item two">
+          <h3>Photography</h3>
+          <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+      <h3 class="testimonials__title">Client testimonials</h3>
+      <div class="testimonials__container">
+        <div class="testimonials__card">
+          <img src="./src/images/image-emily.jpg" alt="profile picture">
+          <p>We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
+          <h4>Emily R.</h4>
+          <h5>Marketing Director</h5>
+        </div>
+        <div class="testimonials__card">
+          <img src="./src/images/image-thomas.jpg" alt="profile picture">
+          <p>Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and enjoyable experience.</p>
+          <h4>Thomas S.</h4>
+          <h5>Chief Operating Officer</h5>
+        </div>
+        <div class="testimonials__card">
+          <img src="./src/images/image-jennie.jpg" alt="profile picture">
+          <p>Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!</p>
+          <h4>Jennie F.</h4>
+          <h5>Business Owner</h5>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="project__previews">
+      <div class="project__card">
+        <img src="./src/images/mobile/image-gallery-milkbottles.jpg" alt="">
+        <span class="project__card--span"><i class="fas fa-eye"></i> Preview</span>
+      </div>
+      <div class="project__card">
+        <img src="./src/images/mobile/image-gallery-orange.jpg" alt="">
+        <span class="project__card--span"><i class="fas fa-eye"></i> Preview</span>
+      </div>
+      <div class="project__card">
+        <img src="./src/images/mobile/image-gallery-cone.jpg" alt="">
+        <span class="project__card--span"><i class="fas fa-eye"></i> Preview</span>
+      </div>
+      <div class="project__card">
+        <img src="./src/images/mobile/image-gallery-sugar-cubes.jpg" alt="">
+        <span class="project__card--span"><i class="fas fa-eye"></i> Preview</span>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer">
+    <img src="./src/images/logo.svg" alt="" class="footer__logo">
+    <ul class="footer__nav">
+      <li class="footer__nav--items">
+        <a class="footer__nav--link" href="#">About</a>
+      </li>
+      <li class="footer__nav--items">
+        <a class="footer__nav--link" href="#">Services</a>
+      </li>
+      <li class="footer__nav--items">
+        <a class="footer__nav--link" href="#">Projects</a>
+      </li>
+    </ul>
+    <div class="footer__social-links">
+      <a href="#"><i class="fab fa-facebook-square fa-2x"></i></a>
+      <a href="#"><i class="fab fa-instagram-square fa-2x"></i></a>
+      <a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+      <a href="#"><i class="fab fa-pinterest-square fa-2x"></i></a>
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://twitter.com/dsaglam94" target="_blank">imDawn</a>.
+    </div>
+  </footer>
+
+  <script src="./src/js/main.js"></script>
+</body>
+</html>

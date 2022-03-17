@@ -1,0 +1,127 @@
+.services {
+
+    &__first {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    &__img--upper {
+        width: 100%;
+        height: 350px;
+        background: url('../images/mobile/image-transform.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    &__img--lower {
+        @extend .services__img--upper;
+        background: url('../images/mobile/image-stand-out.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+
+    
+}
+
+.services__textarea {
+    text-align: center;
+    padding: 3em 2em;
+
+    & h2 {
+        font-weight: 900;
+        font-size: 2rem;
+        color: $clr__neutral--blue-des-dark;
+    }
+
+    & p {
+        font-size: .9rem;
+        margin-block: 2em;
+        color: $clr__neutral--blue-gry-dark-500;
+    }
+
+    .services__link--yellow {
+        position: relative;
+        text-decoration: none;
+        font-family: $ff__fraunces;
+        text-transform: uppercase;
+        font-size: .9rem;
+        color: $clr__neutral--blue-des-dark;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 115px;
+            height: 7px;
+            z-index: -1;
+            border-radius: 5px;
+            background-color: $clr__primary--yellow;
+            bottom: 0;
+            left: -6.5px;
+            opacity: .3;
+            transition: all .5s;
+
+        }
+
+        &:hover::after {
+            height: 100%;
+        }
+    }
+
+    .services__link--red {
+        position: relative;
+        text-decoration: none;
+        font-family: $ff__fraunces;
+        text-transform: uppercase;
+        font-size: .9rem;
+        color: $clr__neutral--blue-des-dark;
+
+        &::after {
+            content: '';
+            position: absolute;
+            width: 115px;
+            height: 7px;
+            z-index: -1;
+            border-radius: 5px;
+            background-color: $clr__primary--red-soft;
+            bottom: 0;
+            left: -6.5px;
+            opacity: .3;
+            transition: all .5s;
+
+        }
+
+        &:hover::after {
+            height: 100%;
+        }
+    }
+}
+
+.services__third--item {
+    padding: 3em 2em;
+    text-align: center;
+
+    & h3 {
+        font-size: 1.5rem;
+        margin-top: 18em;
+        font-weight: 900;
+    }
+
+    & p {
+        margin-top: 2em;
+        font-size: .9rem;
+    }
+}
+
+.one {
+    color: $clr__primary--cyan-900;
+    background: url('../images/mobile/image-graphic-design.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.two {
+    color: $clr__primary--blue-dark;
+    background: url('../images/mobile/image-photography.jpg');
+    background-size: cover;
+    background-position: center;
+}
