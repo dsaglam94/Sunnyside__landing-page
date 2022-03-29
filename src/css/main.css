@@ -78,12 +78,10 @@
   transform: translate(-50%, -50%);
   background-color: white;
   clip-path: polygon(0 17%, 86% 17%, 100% 0, 100% 16%, 100% 100%, 0 100%);
-  transition: all 1s ease;
 }
 .header .nav.nav-open {
   left: 50%;
-  top: 220px;
-  transform: translate(-50%, -50%);
+  top: 270px;
 }
 .header .nav__items {
   list-style: none;
